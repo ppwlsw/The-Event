@@ -1,0 +1,7 @@
+.button{
+    -fx-background-color: F5EFE7;
+    -fx-cursor: hand;
+}
+.button:hover{
+    -fx-background-color: FCF0E9;
+}

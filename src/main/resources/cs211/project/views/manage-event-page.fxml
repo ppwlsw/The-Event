@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@../../../design/design.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.ManageEventController">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="250.0" styleClass="vbox">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onBackToMyEventPageButton" text="Back">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <ImageView fx:id="eventImageView" fitHeight="160.0" fitWidth="200.0" pickOnBounds="true">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="25.0" />
+               </VBox.margin>
+            </ImageView>
+            <Button mnemonicParsing="false" onAction="#onChangeImageButtonClick" text="Change Image">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="80.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onParticipatorButtonClick" text="Open for Participator">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="60.0" top="35.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onVolunteerButtonCLick" text="Open for Volunteer">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="65.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onScheduleCilck" text="Schedule">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="90.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onDetailButtonClick" text="Details">
+               <VBox.margin>
+                  <Insets left="95.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Label layoutX="384.0" layoutY="28.0" text="Manage Event">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="215.0" text="Event Name :">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <rotationAxis>
+            <Point3D x="-19.0" z="1.0" />
+         </rotationAxis>
+      </Label>
+      <Label layoutX="300.0" layoutY="155.0" text="Event ID :">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <rotationAxis>
+            <Point3D x="-19.0" z="1.0" />
+         </rotationAxis>
+      </Label>
+      <Label layoutX="300.0" layoutY="393.0" text="Max Participate :">
+         <font>
+            <Font size="23.0" />
+         </font>
+         <rotationAxis>
+            <Point3D x="-19.0" z="1.0" />
+         </rotationAxis>
+      </Label>
+      <Button fx:id="editEventButton" layoutX="686.0" layoutY="561.0" mnemonicParsing="false" onAction="#onEditEventButtonClick" prefHeight="10.0" prefWidth="100.0" text="Edit">
+         <rotationAxis>
+            <Point3D x="-19.0" z="1.0" />
+         </rotationAxis>
+      </Button>
+      <Button fx:id="saveEditButton" layoutX="686.0" layoutY="561.0" mnemonicParsing="false" onAction="#onSaveEditButtonClick" prefHeight="10.0" prefWidth="100.0" text="Save" />
+      <TextField fx:id="eventNameTextField" layoutX="533.0" layoutY="216.0" />
+      <TextField fx:id="eventMaxParticipateTextField" layoutX="533.0" layoutY="394.0" />
+      <TextField fx:id="eventIdTextField" layoutX="533.0" layoutY="156.0" />
+      <Label layoutX="300.0" layoutY="307.0" text="Description :">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="eventDescriptionTextField" layoutX="536.0" layoutY="269.0" prefHeight="105.0" prefWidth="209.0" />
+      <Label layoutX="261.0" layoutY="457.0" text="Start Date :">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="539.0" layoutY="457.0" text="End Date :">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="259.0" layoutY="527.0" text="Start Time :">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="539.0" layoutY="527.0" text="End Time :">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="eventStartTimeTextField" layoutX="385.0" layoutY="528.0" prefHeight="26.0" prefWidth="136.0" />
+      <TextField fx:id="eventEndTimeTextField" layoutX="655.0" layoutY="528.0" prefHeight="26.0" prefWidth="127.0" />
+      <DatePicker fx:id="eventStartDatePicker" editable="false" layoutX="386.0" layoutY="460.0" prefHeight="26.0" prefWidth="141.0" />
+      <DatePicker fx:id="eventEndDatePicker" editable="false" layoutX="655.0" layoutY="461.0" prefHeight="26.0" prefWidth="141.0" />
+   </children>
+</AnchorPane>

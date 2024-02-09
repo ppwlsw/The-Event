@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@../../../design/design.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.JoinEventController">
+   <children>
+      <ImageView fx:id="eventImageView" fitHeight="200.0" fitWidth="250.0" layoutX="39.0" layoutY="50.0" pickOnBounds="true" />
+      <Label fx:id="eventNameLabel" layoutX="405.0" layoutY="58.0" text="eventNameLabel">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="315.0" layoutY="118.0" text="Members :">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="membersLabel" layoutX="445.0" layoutY="118.0" text="membersLabel">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="joinEventAsVolunteerButton" layoutX="657.0" layoutY="557.0" mnemonicParsing="false" onAction="#onJoinAsVolunteerButtonClick" prefHeight="10.0" prefWidth="111.0" text="Join as Volunteer">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <Button fx:id="joinEventButton" layoutX="676.0" layoutY="499.0" mnemonicParsing="false" onAction="#onClickJoinButton" text="Join">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Button fx:id="backToMainPageButton" layoutX="11.0" layoutY="10.0" mnemonicParsing="false" onAction="#onBackToMainPageButton" text="Back" />
+      <Label fx:id="startJoinLabel" layoutX="51.0" layoutY="528.0" text="startJoinLabel">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="endJoinLabel" layoutX="342.0" layoutY="524.0" text="endJoinLabel">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="315.0" layoutY="58.0" text="Event :">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="300.0" text="Description :">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="scheduleButton" layoutX="651.0" layoutY="499.0" mnemonicParsing="false" onAction="#onClickScheduleButton" text="Schedule">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Label layoutX="28.0" layoutY="488.0" text="Open to join at">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="317.0" layoutY="490.0" text="Close to join at">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="315.0" layoutY="168.0" text="Start time:">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="315.0" layoutY="221.0" text="End time:">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="eventStartLabel" layoutX="431.0" layoutY="168.0" text="eventStartLabel">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label fx:id="eventEndLabel" layoutX="431.0" layoutY="221.0" text="eventEndLabel">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="descriptionTextArea" editable="false" layoutX="55.0" layoutY="341.0" prefHeight="130.0" prefWidth="703.0" wrapText="true">
+         <font>
+            <Font name="Calibri" size="16.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>

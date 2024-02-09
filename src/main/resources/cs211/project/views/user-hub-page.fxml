@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" stylesheets="@../../../design/design.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.UserHubController">
+   <children>
+      <Label layoutX="366.0" layoutY="21.0" text="Hub">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <Button fx:id="goCreatePageButton" layoutX="76.0" layoutY="150.0" mnemonicParsing="false" onAction="#onCreateEventClick" prefHeight="40.0" prefWidth="140.0" text="Create Event" />
+      <Button fx:id="goAccountPageButton" layoutX="76.0" layoutY="450.0" mnemonicParsing="false" onAction="#onAccountSettingClick" prefHeight="40.0" prefWidth="140.0" text="Account Setting" />
+      <Button fx:id="goYourEventButton" layoutX="  580.0" layoutY="150.0" mnemonicParsing="false" onAction="#onYourEventClick" prefHeight="40.0" prefWidth="140.0" text="Your Event" />
+      <Button fx:id="goHistoryPageButton" layoutX="580.0" layoutY="450.0" mnemonicParsing="false" onAction="#onHistoryEventClick" prefHeight="40.0" prefWidth="140.0" text="Histrory Event" />
+      <Button layoutX="726.0" layoutY="14.0" mnemonicParsing="false" onAction="#onHelloPageButtonClick" prefHeight="20.0" prefWidth="60.0" text="Log out" />
+      <Circle fx:id="circle" fill="DODGERBLUE" layoutX="400.0" layoutY="300.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      <Button fx:id="goUserPageButton" layoutX="11.0" layoutY="11.0" mnemonicParsing="false" onAction="#onUserPageButtonClick" text="Back" />
+   </children>
+</AnchorPane>

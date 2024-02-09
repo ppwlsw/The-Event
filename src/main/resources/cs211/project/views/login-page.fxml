@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: F5EFE7;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cs211.project.controllers.LoginController">
+   <children>
+      <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="485.0" layoutX="208.0" layoutY="58.0" stroke="#e1dcdc" strokeType="INSIDE" width="370.0" />
+      <Button layoutX="364.0" layoutY="474.0" mnemonicParsing="false" onAction="#goToHelloPage" prefHeight="20.0" prefWidth="60.0" stylesheets="@../../../design/design.css" textFill="WHITE">
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="HOME" />
+         </graphic></Button>
+      <Label layoutX="263.0" layoutY="217.0" text="Username">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <Label layoutX="264.0" layoutY="283.0" text="Password">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userNameTextField" layoutX="263.0" layoutY="240.0" prefHeight="26.0" prefWidth="262.0" promptText="Username" styleClass="text-field-login" stylesheets="@../../../design/design.css" />
+      <Button layoutX="262.0" layoutY="386.0" mnemonicParsing="false" onAction="#loginButton" prefHeight="26.0" prefWidth="262.0" style="-fx-background-radius: 30px;" stylesheets="@../../../design/design.css" text="Log in" textFill="WHITE" />
+      <Label fx:id="errorLabel" layoutX="258.0" layoutY="336.0" textFill="#e40e0e" />
+      <PasswordField fx:id="passWordTextField" layoutX="263.0" layoutY="301.0" prefHeight="26.0" prefWidth="262.0" promptText="Password" styleClass="password-field-login" stylesheets="@../../../design/design.css" />
+      <Label layoutX="356.0" layoutY="121.0" text="Login" textAlignment="CENTER">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView fill="#d8c4b6" glyphName="USER" layoutX="270.0" layoutY="255.0" text="" />
+      <FontAwesomeIconView fill="#d8c4b6" glyphName="LOCK" layoutX="270.0" layoutY="317.0" />
+   </children>
+</AnchorPane>
